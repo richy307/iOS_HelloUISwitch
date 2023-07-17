@@ -9,6 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBAction func makeAChange(_ sender: UISwitch) {
+        // use isOn to check the state of the switch
+        if sender.isOn == true {
+            print("on !!")
+            view.backgroundColor = .white
+        } else {
+            print("off !!")
+            view.backgroundColor = .black
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
