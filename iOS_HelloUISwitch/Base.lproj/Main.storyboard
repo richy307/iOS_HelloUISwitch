@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9b-VF-PSb">
-                                <rect key="frame" x="172" y="188" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9b-VF-PSb">
+                                <rect key="frame" x="172" y="410.66666666666669" width="51" height="31"/>
                                 <connections>
                                     <action selector="makeAChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="hH0-md-ZpI"/>
                                 </connections>
@@ -26,6 +25,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T9b-VF-PSb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D8k-AF-w3V"/>
+                            <constraint firstItem="T9b-VF-PSb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kLl-dx-liC"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mySwitch" destination="T9b-VF-PSb" id="1Wr-zN-EXN"/>
