@@ -22,6 +22,17 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @objc func codeSwitchChanges(_ sender: UISwitch) {
+        if sender.isOn == true {
+            print("on !!")
+            view.backgroundColor = .white
+        } else {
+            print("off !!")
+            view.backgroundColor = .black
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
